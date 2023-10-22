@@ -10,7 +10,7 @@ const guessNum = function(event) {
             responseEl.classList.remove("failed");
             responseEl.classList.toggle("d-none");
             spinner.classList.toggle("d-none");
-            responseEl.textContent = "💥Correct Guess💥";
+            responseEl.textContent = "Correct Guess";
             responseEl.classList.add("success");
         }, 1000);
         randomNum = Math.ceil(Math.random() * 10);
@@ -20,7 +20,7 @@ const guessNum = function(event) {
             responseEl.classList.remove("success");
             responseEl.classList.toggle("d-none");
             spinner.classList.toggle("d-none");
-            responseEl.textContent = "🤞Better Luck next time🤞";
+            responseEl.textContent = "Better Luck next time";
             responseEl.classList.add("failed");
         }, 1000);
     }
